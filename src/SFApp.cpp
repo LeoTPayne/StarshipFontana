@@ -23,7 +23,7 @@ SFApp::SFApp(std::shared_ptr<SFWindow> window) : score(0), fire(0), is_running(t
    for(int i=0; i<number_of_coins; i++) {
     // place an wall at width/number_of_coins * i
     auto coin = make_shared<SFAsset>(SFASSET_COIN, sf_window);
-    auto pos  = Point2((canvas_w/number_of_coins)*i+50, 400.0f);
+    auto pos  = Point2((canvas_w/number_of_coins)*i+85, 400.0f);
     coin->SetPosition(pos);
      coins.push_back(coin);
   }
