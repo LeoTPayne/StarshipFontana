@@ -25,7 +25,6 @@ public:
   int     OnExecute();
   void    OnUpdateWorld();
   void    OnRender();
-
   void    FireProjectile();
 private:
   bool                    is_running;
@@ -35,9 +34,10 @@ private:
   shared_ptr<SFAsset>        player;
   shared_ptr<SFBoundingBox>  app_box;
   list<shared_ptr<SFAsset> > projectiles;
-  list<shared_ptr<SFAsset> > aliens;
+  list<shared_ptr<SFAsset> > wall;
   list<shared_ptr<SFAsset> > coins;
 
   int fire;
+  int score;
 };
 #endif
